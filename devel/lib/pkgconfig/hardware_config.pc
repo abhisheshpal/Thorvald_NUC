@@ -1,0 +1,8 @@
+prefix=/home/vigneshnuc/catkin_ws/devel
+
+Name: hardware_config
+Description: Description of hardware_config
+Version: 0.6.4
+Cflags: 
+Libs: -L/home/vigneshnuc/catkin_ws/devel/lib 
+Requires: 

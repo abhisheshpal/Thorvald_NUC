@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<package>
+  <name>can_devices</name>
+  <version>0.0.0</version>
+
+  <description>This package and implements hardware which is connected to a can bus and works with a canopen-interface. "CanDriveItf" (created by the excelent team behind the car-o-bot project) provides a - more or less - generic interface to the controller-drive components. "CanDrvie..." then implements a specific setup, e.g. an Roboteq FBL2360 Controller in case of the "CanDriveFbl2360".</description>
+  <!--  -->
+
+  <license>LGPL</license>
+
+  <url type="website"></url>
+
+  <maintainer email="larg@nmbu.no">Lars Grimstad</maintainer>
+  <author>Lars Grimstad</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>cob_generic_can</build_depend>
+  <build_depend>cob_utilities</build_depend>
+  <run_depend>roscpp</run_depend>
+  <run_depend>cob_generic_can</run_depend>
+  <run_depend>cob_utilities</run_depend>
+ 
+  <export>
+    <cpp lflags="-Wl,-rpath,${prefix}/common/lib -L${prefix}/common/lib -lcan_devices" cflags="-I${prefix}/common/include"/>
+  </export>
+</package>

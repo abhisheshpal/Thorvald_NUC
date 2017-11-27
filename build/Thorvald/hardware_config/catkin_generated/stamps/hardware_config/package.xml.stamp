@@ -1,0 +1,20 @@
+<package format="2">
+  <name>hardware_config</name>
+  <version>0.6.4</version>
+  <description>This package contains urdf and hardware/device configuration files for the Thorvald II platform.</description>
+
+  <license>LGPL</license>
+
+
+  <author email="lars.grimstad@nmbu.no">Lars Grimstad</author>
+  <maintainer email="lars.grimstad@nmbu.no">Lars Grimstad</maintainer>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <depend>roslaunch</depend>
+  <depend>rostest</depend>
+
+  <exec_depend>visualization_msgs</exec_depend>
+  <exec_depend>xacro</exec_depend>
+
+</package>

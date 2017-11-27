@@ -1,0 +1,8 @@
+prefix=/home/vigneshnuc/catkin_ws/install
+
+Name: rusty_simulation
+Description: Description of rusty_simulation
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/vigneshnuc/catkin_ws/install/lib 
+Requires: 

@@ -1,0 +1,2 @@
+gedit /etc/ld.so.conf.d/randomLibs.conf
+

@@ -1,0 +1,8 @@
+prefix=/home/vigneshnuc/catkin_ws/devel
+
+Name: can_devices
+Description: Description of can_devices
+Version: 0.0.0
+Cflags: -I/home/vigneshnuc/catkin_ws/src/Thorvald/can_devices/common/include
+Libs: -L/home/vigneshnuc/catkin_ws/devel/lib -lcan_devices_roboteq
+Requires: roscpp cob_generic_can cob_utilities

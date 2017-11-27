@@ -1,0 +1,8 @@
+prefix=/home/vigneshnuc/catkin_ws/devel
+
+Name: opengm
+Description: Description of opengm
+Version: 0.6.10
+Cflags: 
+Libs: -L/home/vigneshnuc/catkin_ws/devel/lib 
+Requires: 

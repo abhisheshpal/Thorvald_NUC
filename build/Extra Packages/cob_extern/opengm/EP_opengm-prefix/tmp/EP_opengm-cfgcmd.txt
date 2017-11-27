@@ -1,0 +1,1 @@
+cmd='/usr/bin/cmake;-GUnix Makefiles;/home/vigneshnuc/catkin_ws/build/Extra Packages/cob_extern/opengm/opengm-src'

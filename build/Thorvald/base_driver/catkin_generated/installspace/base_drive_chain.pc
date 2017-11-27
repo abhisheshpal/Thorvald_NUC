@@ -1,0 +1,8 @@
+prefix=/home/vigneshnuc/catkin_ws/install
+
+Name: base_drive_chain
+Description: Description of base_drive_chain
+Version: 0.5.2
+Cflags: -I/home/vigneshnuc/catkin_ws/install/include
+Libs: -L/home/vigneshnuc/catkin_ws/install/lib -lbase_drive_chain
+Requires: roscpp control_msgs cob_generic_can can_devices cob_utilities libpcan std_msgs geometry_msgs sensor_msgs diagnostic_msgs message_runtime

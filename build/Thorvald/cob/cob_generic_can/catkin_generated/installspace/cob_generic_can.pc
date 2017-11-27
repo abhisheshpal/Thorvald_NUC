@@ -1,0 +1,8 @@
+prefix=/home/vigneshnuc/catkin_ws/install
+
+Name: cob_generic_can
+Description: Description of cob_generic_can
+Version: 0.5.2
+Cflags: -I/home/vigneshnuc/catkin_ws/install/include
+Libs: -L/home/vigneshnuc/catkin_ws/install/lib -lcob_generic_can_peaksysusb -lcob_generic_can_peaksys
+Requires: roscpp cob_utilities libpcan

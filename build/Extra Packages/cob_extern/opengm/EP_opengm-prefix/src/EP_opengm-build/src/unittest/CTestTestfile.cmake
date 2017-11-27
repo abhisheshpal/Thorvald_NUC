@@ -1,0 +1,35 @@
+# CMake generated Testfile for 
+# Source directory: /home/vigneshnuc/catkin_ws/build/Extra Packages/cob_extern/opengm/opengm-src/src/unittest
+# Build directory: /home/vigneshnuc/catkin_ws/build/Extra Packages/cob_extern/opengm/EP_opengm-prefix/src/EP_opengm-build/src/unittest
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.
+add_test(test-partitions "/home/vigneshnuc/catkin_ws/build/Extra Packages/cob_extern/opengm/EP_opengm-prefix/src/EP_opengm-build/src/unittest/test-partitions")
+add_test(test-gm-learning-functions "/home/vigneshnuc/catkin_ws/build/Extra Packages/cob_extern/opengm/EP_opengm-prefix/src/EP_opengm-build/src/unittest/test-gm-learning-functions")
+add_test(test-graphicalmodelmanipulator "/home/vigneshnuc/catkin_ws/build/Extra Packages/cob_extern/opengm/EP_opengm-prefix/src/EP_opengm-build/src/unittest/test-graphicalmodelmanipulator")
+add_test(test-explicit-storage "/home/vigneshnuc/catkin_ws/build/Extra Packages/cob_extern/opengm/EP_opengm-prefix/src/EP_opengm-build/src/unittest/test-explicit-storage")
+add_test(test-types "/home/vigneshnuc/catkin_ws/build/Extra Packages/cob_extern/opengm/EP_opengm-prefix/src/EP_opengm-build/src/unittest/test-types")
+add_test(test-test-type-sizes-for-hdf5 "/home/vigneshnuc/catkin_ws/build/Extra Packages/cob_extern/opengm/EP_opengm-prefix/src/EP_opengm-build/src/unittest/test-test-type-sizes-for-hdf5")
+add_test(test-fast-sequence "/home/vigneshnuc/catkin_ws/build/Extra Packages/cob_extern/opengm/EP_opengm-prefix/src/EP_opengm-build/src/unittest/test-fast-sequence")
+add_test(test-functions "/home/vigneshnuc/catkin_ws/build/Extra Packages/cob_extern/opengm/EP_opengm-prefix/src/EP_opengm-build/src/unittest/test-functions")
+add_test(test-factor "/home/vigneshnuc/catkin_ws/build/Extra Packages/cob_extern/opengm/EP_opengm-prefix/src/EP_opengm-build/src/unittest/test-factor")
+add_test(test-discretespaces "/home/vigneshnuc/catkin_ws/build/Extra Packages/cob_extern/opengm/EP_opengm-prefix/src/EP_opengm-build/src/unittest/test-discretespaces")
+add_test(test-graphicalmodel "/home/vigneshnuc/catkin_ws/build/Extra Packages/cob_extern/opengm/EP_opengm-prefix/src/EP_opengm-build/src/unittest/test-graphicalmodel")
+add_test(test-factorgraph "/home/vigneshnuc/catkin_ws/build/Extra Packages/cob_extern/opengm/EP_opengm-prefix/src/EP_opengm-build/src/unittest/test-factorgraph")
+add_test(test-graphicalmodeldecomposer "/home/vigneshnuc/catkin_ws/build/Extra Packages/cob_extern/opengm/EP_opengm-prefix/src/EP_opengm-build/src/unittest/test-graphicalmodeldecomposer")
+add_test(test-operate "/home/vigneshnuc/catkin_ws/build/Extra Packages/cob_extern/opengm/EP_opengm-prefix/src/EP_opengm-build/src/unittest/test-operate")
+add_test(test-operations "/home/vigneshnuc/catkin_ws/build/Extra Packages/cob_extern/opengm/EP_opengm-prefix/src/EP_opengm-build/src/unittest/test-operations")
+add_test(test-accumulate "/home/vigneshnuc/catkin_ws/build/Extra Packages/cob_extern/opengm/EP_opengm-prefix/src/EP_opengm-build/src/unittest/test-accumulate")
+add_test(test-randomaccessset "/home/vigneshnuc/catkin_ws/build/Extra Packages/cob_extern/opengm/EP_opengm-prefix/src/EP_opengm-build/src/unittest/test-randomaccessset")
+add_test(test-tribool "/home/vigneshnuc/catkin_ws/build/Extra Packages/cob_extern/opengm/EP_opengm-prefix/src/EP_opengm-build/src/unittest/test-tribool")
+add_test(test-accessor-iterator "/home/vigneshnuc/catkin_ws/build/Extra Packages/cob_extern/opengm/EP_opengm-prefix/src/EP_opengm-build/src/unittest/test-accessor-iterator")
+add_test(test-random "/home/vigneshnuc/catkin_ws/build/Extra Packages/cob_extern/opengm/EP_opengm-prefix/src/EP_opengm-build/src/unittest/test-random")
+add_test(test-primal-lpbound "/home/vigneshnuc/catkin_ws/build/Extra Packages/cob_extern/opengm/EP_opengm-prefix/src/EP_opengm-build/src/unittest/test-primal-lpbound")
+add_test(test-transportsolver "/home/vigneshnuc/catkin_ws/build/Extra Packages/cob_extern/opengm/EP_opengm-prefix/src/EP_opengm-build/src/unittest/test-transportsolver")
+add_test(test-lp-solver "/home/vigneshnuc/catkin_ws/build/Extra Packages/cob_extern/opengm/EP_opengm-prefix/src/EP_opengm-build/src/unittest/test-lp-solver")
+add_test(test-indicator-variable "/home/vigneshnuc/catkin_ws/build/Extra Packages/cob_extern/opengm/EP_opengm-prefix/src/EP_opengm-build/src/unittest/test-indicator-variable")
+add_test(test-linear-constraint "/home/vigneshnuc/catkin_ws/build/Extra Packages/cob_extern/opengm/EP_opengm-prefix/src/EP_opengm-build/src/unittest/test-linear-constraint")
+add_test(test-subsequence-iterator "/home/vigneshnuc/catkin_ws/build/Extra Packages/cob_extern/opengm/EP_opengm-prefix/src/EP_opengm-build/src/unittest/test-subsequence-iterator")
+add_test(test-lp-functiontransfer "/home/vigneshnuc/catkin_ws/build/Extra Packages/cob_extern/opengm/EP_opengm-prefix/src/EP_opengm-build/src/unittest/test-lp-functiontransfer")
+add_test(test-canonicalview "/home/vigneshnuc/catkin_ws/build/Extra Packages/cob_extern/opengm/EP_opengm-prefix/src/EP_opengm-build/src/unittest/test-canonicalview")
+subdirs(inference)

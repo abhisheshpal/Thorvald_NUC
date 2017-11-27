@@ -1,0 +1,8 @@
+prefix=/home/vigneshnuc/catkin_ws/install
+
+Name: cob_utilities
+Description: Description of cob_utilities
+Version: 0.5.2
+Cflags: -I/home/vigneshnuc/catkin_ws/install/include
+Libs: -L/home/vigneshnuc/catkin_ws/install/lib -lcob_utilities
+Requires: roscpp

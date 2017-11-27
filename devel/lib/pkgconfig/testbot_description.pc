@@ -1,0 +1,8 @@
+prefix=/home/vigneshnuc/catkin_ws/devel
+
+Name: testbot_description
+Description: Description of testbot_description
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/vigneshnuc/catkin_ws/devel/lib 
+Requires: dynamic_reconfigure gazebo_plugins gazebo_ros geometry_msgs nav_msgs roscpp std_msgs std_srvs tf
