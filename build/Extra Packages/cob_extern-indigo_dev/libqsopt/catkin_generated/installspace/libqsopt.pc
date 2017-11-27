@@ -1,0 +1,8 @@
+prefix=/home/vigneshnuc/catkin_ws/install
+
+Name: libqsopt
+Description: Description of libqsopt
+Version: 0.6.10
+Cflags: 
+Libs: -L/home/vigneshnuc/catkin_ws/install/lib 
+Requires: 

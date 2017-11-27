@@ -667,10 +667,10 @@ cob_driver_BINARY_DIR:STATIC=/home/vigneshnuc/catkin_ws/build/Thorvald/cob/cob_d
 cob_driver_SOURCE_DIR:STATIC=/home/vigneshnuc/catkin_ws/src/Thorvald/cob/cob_driver
 
 //Value Computed by CMake
-cob_extern_BINARY_DIR:STATIC=/home/vigneshnuc/catkin_ws/build/Extra Packages/cob_extern/cob_extern
+cob_extern_BINARY_DIR:STATIC=/home/vigneshnuc/catkin_ws/build/Extra Packages/cob_extern-indigo_dev/cob_extern
 
 //Value Computed by CMake
-cob_extern_SOURCE_DIR:STATIC=/home/vigneshnuc/catkin_ws/src/Extra Packages/cob_extern/cob_extern
+cob_extern_SOURCE_DIR:STATIC=/home/vigneshnuc/catkin_ws/src/Extra Packages/cob_extern-indigo_dev/cob_extern
 
 //Value Computed by CMake
 cob_generic_can_BINARY_DIR:STATIC=/home/vigneshnuc/catkin_ws/build/Thorvald/cob/cob_generic_can
@@ -835,50 +835,56 @@ laser_geometry_DIR:PATH=/opt/ros/kinetic/share/laser_geometry/cmake
 //Dependencies for the target
 laser_scan_filters_LIB_DEPENDS:STATIC=general;/opt/ros/kinetic/lib/libtf.so;general;/opt/ros/kinetic/lib/libtf2_ros.so;general;/opt/ros/kinetic/lib/libactionlib.so;general;/opt/ros/kinetic/lib/libtf2.so;general;/opt/ros/kinetic/lib/libmean.so;general;/opt/ros/kinetic/lib/libparams.so;general;/opt/ros/kinetic/lib/libincrement.so;general;/opt/ros/kinetic/lib/libmedian.so;general;/opt/ros/kinetic/lib/libtransfer_function.so;general;/opt/ros/kinetic/lib/libmessage_filters.so;general;/opt/ros/kinetic/lib/libroscpp.so;general;/usr/lib/x86_64-linux-gnu/libboost_signals.so;general;/opt/ros/kinetic/lib/libroscpp_serialization.so;general;/opt/ros/kinetic/lib/libxmlrpcpp.so;general;/opt/ros/kinetic/lib/liblaser_geometry.so;general;/opt/ros/kinetic/lib/libclass_loader.so;general;/usr/lib/libPocoFoundation.so;general;/usr/lib/x86_64-linux-gnu/libdl.so;general;/opt/ros/kinetic/lib/librosconsole.so;general;/opt/ros/kinetic/lib/librosconsole_log4cxx.so;general;/opt/ros/kinetic/lib/librosconsole_backend_interface.so;general;/usr/lib/x86_64-linux-gnu/liblog4cxx.so;general;/usr/lib/x86_64-linux-gnu/libboost_regex.so;general;/opt/ros/kinetic/lib/librostime.so;general;/opt/ros/kinetic/lib/libcpp_common.so;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so;general;/usr/lib/x86_64-linux-gnu/libboost_chrono.so;general;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;general;/usr/lib/x86_64-linux-gnu/libboost_atomic.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;general;/usr/lib/x86_64-linux-gnu/libconsole_bridge.so;general;/opt/ros/kinetic/lib/libroslib.so;general;/opt/ros/kinetic/lib/librospack.so;general;/usr/lib/x86_64-linux-gnu/libpython2.7.so;general;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;general;/usr/lib/x86_64-linux-gnu/libboost_program_options.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so;general;/usr/lib/x86_64-linux-gnu/libtinyxml.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so;general;/usr/lib/x86_64-linux-gnu/libboost_signals.so;
 
+//Value Computed by CMake
+leica_tca1100_BINARY_DIR:STATIC=/home/vigneshnuc/catkin_ws/build/sensor_fusion/leica_tca1100
+
+//Value Computed by CMake
+leica_tca1100_SOURCE_DIR:STATIC=/home/vigneshnuc/catkin_ws/src/sensor_fusion/leica_tca1100
+
 //Path to a library.
 lib:FILEPATH=/opt/ros/kinetic/lib/librosconsole_bridge.so
 
 //Value Computed by CMake
-libconcorde_tsp_solver_BINARY_DIR:STATIC=/home/vigneshnuc/catkin_ws/build/Extra Packages/cob_extern/libconcorde_tsp_solver
+libconcorde_tsp_solver_BINARY_DIR:STATIC=/home/vigneshnuc/catkin_ws/build/Extra Packages/cob_extern-indigo_dev/libconcorde_tsp_solver
 
 //Value Computed by CMake
-libconcorde_tsp_solver_SOURCE_DIR:STATIC=/home/vigneshnuc/catkin_ws/src/Extra Packages/cob_extern/libconcorde_tsp_solver
+libconcorde_tsp_solver_SOURCE_DIR:STATIC=/home/vigneshnuc/catkin_ws/src/Extra Packages/cob_extern-indigo_dev/libconcorde_tsp_solver
 
 //Value Computed by CMake
-libdlib_BINARY_DIR:STATIC=/home/vigneshnuc/catkin_ws/build/Extra Packages/cob_extern/libdlib
+libdlib_BINARY_DIR:STATIC=/home/vigneshnuc/catkin_ws/build/Extra Packages/cob_extern-indigo_dev/libdlib
 
 //Value Computed by CMake
-libdlib_SOURCE_DIR:STATIC=/home/vigneshnuc/catkin_ws/src/Extra Packages/cob_extern/libdlib
+libdlib_SOURCE_DIR:STATIC=/home/vigneshnuc/catkin_ws/src/Extra Packages/cob_extern-indigo_dev/libdlib
 
 //Value Computed by CMake
-libntcan_BINARY_DIR:STATIC=/home/vigneshnuc/catkin_ws/build/Extra Packages/cob_extern/libntcan
+libntcan_BINARY_DIR:STATIC=/home/vigneshnuc/catkin_ws/build/Extra Packages/cob_extern-indigo_dev/libntcan
 
 //Value Computed by CMake
-libntcan_SOURCE_DIR:STATIC=/home/vigneshnuc/catkin_ws/src/Extra Packages/cob_extern/libntcan
+libntcan_SOURCE_DIR:STATIC=/home/vigneshnuc/catkin_ws/src/Extra Packages/cob_extern-indigo_dev/libntcan
 
 //Value Computed by CMake
-libpcan_BINARY_DIR:STATIC=/home/vigneshnuc/catkin_ws/build/Extra Packages/cob_extern/libpcan
+libpcan_BINARY_DIR:STATIC=/home/vigneshnuc/catkin_ws/build/Extra Packages/libpcan
 
 //The directory containing a CMake configuration file for libpcan.
 libpcan_DIR:PATH=/home/vigneshnuc/catkin_ws/devel/share/libpcan/cmake
 
 //Value Computed by CMake
-libpcan_SOURCE_DIR:STATIC=/home/vigneshnuc/catkin_ws/src/Extra Packages/cob_extern/libpcan
+libpcan_SOURCE_DIR:STATIC=/home/vigneshnuc/catkin_ws/src/Extra Packages/libpcan
 
 //Value Computed by CMake
-libphidgets_BINARY_DIR:STATIC=/home/vigneshnuc/catkin_ws/build/Extra Packages/cob_extern/libphidgets
+libphidgets_BINARY_DIR:STATIC=/home/vigneshnuc/catkin_ws/build/Extra Packages/cob_extern-indigo_dev/libphidgets
 
 //Value Computed by CMake
-libphidgets_SOURCE_DIR:STATIC=/home/vigneshnuc/catkin_ws/src/Extra Packages/cob_extern/libphidgets
+libphidgets_SOURCE_DIR:STATIC=/home/vigneshnuc/catkin_ws/src/Extra Packages/cob_extern-indigo_dev/libphidgets
 
 //Value Computed by CMake
-libqsopt_BINARY_DIR:STATIC=/home/vigneshnuc/catkin_ws/build/Extra Packages/cob_extern/libqsopt
+libqsopt_BINARY_DIR:STATIC=/home/vigneshnuc/catkin_ws/build/Extra Packages/cob_extern-indigo_dev/libqsopt
 
 //The directory containing a CMake configuration file for libqsopt.
 libqsopt_DIR:PATH=/home/vigneshnuc/catkin_ws/devel/share/libqsopt/cmake
 
 //Value Computed by CMake
-libqsopt_SOURCE_DIR:STATIC=/home/vigneshnuc/catkin_ws/src/Extra Packages/cob_extern/libqsopt
+libqsopt_SOURCE_DIR:STATIC=/home/vigneshnuc/catkin_ws/src/Extra Packages/cob_extern-indigo_dev/libqsopt
 
 //The directory containing a CMake configuration file for map_msgs.
 map_msgs_DIR:PATH=/opt/ros/kinetic/share/map_msgs/cmake
@@ -938,10 +944,10 @@ obstacle_tracker_LIB_DEPENDS:STATIC=general;/opt/ros/kinetic/lib/libnodeletlib.s
 onelib:FILEPATH=/usr/lib/x86_64-linux-gnu/libignition-math2.so
 
 //Value Computed by CMake
-opengm_BINARY_DIR:STATIC=/home/vigneshnuc/catkin_ws/build/Extra Packages/cob_extern/opengm
+opengm_BINARY_DIR:STATIC=/home/vigneshnuc/catkin_ws/build/Extra Packages/cob_extern-indigo_dev/opengm
 
 //Value Computed by CMake
-opengm_SOURCE_DIR:STATIC=/home/vigneshnuc/catkin_ws/src/Extra Packages/cob_extern/opengm
+opengm_SOURCE_DIR:STATIC=/home/vigneshnuc/catkin_ws/src/Extra Packages/cob_extern-indigo_dev/opengm
 
 //The directory containing a CMake configuration file for pluginlib.
 pluginlib_DIR:PATH=/opt/ros/kinetic/share/pluginlib/cmake
@@ -1041,6 +1047,9 @@ scans_merger_LIB_DEPENDS:STATIC=general;/opt/ros/kinetic/lib/libnodeletlib.so;ge
 
 //The directory containing a CMake configuration file for sensor_msgs.
 sensor_msgs_DIR:PATH=/opt/ros/kinetic/share/sensor_msgs/cmake
+
+//The directory containing a CMake configuration file for serial.
+serial_DIR:PATH=/opt/ros/kinetic/share/serial/cmake
 
 //The directory containing a CMake configuration file for smclib.
 smclib_DIR:PATH=/opt/ros/kinetic/share/smclib/cmake
@@ -1292,7 +1301,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=31
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=25
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

@@ -3,6 +3,6 @@ prefix=/home/vigneshnuc/catkin_ws/devel
 Name: libntcan
 Description: Description of libntcan
 Version: 0.6.10
-Cflags: -I/home/vigneshnuc/catkin_ws/src/Extra Packages/cob_extern/libntcan/common/include
+Cflags: -I/home/vigneshnuc/catkin_ws/src/Extra Packages/cob_extern-indigo_dev/libntcan/common/include
 Libs: -L/home/vigneshnuc/catkin_ws/devel/lib -lntcan
 Requires: 
