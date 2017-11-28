@@ -1,0 +1,8 @@
+prefix=/home/vigneshnuc/catkin_ws/devel
+
+Name: but_velodyne_proc
+Description: Description of but_velodyne_proc
+Version: 0.0.5
+Cflags: 
+Libs: -L/home/vigneshnuc/catkin_ws/devel/lib 
+Requires: eigen nav_msgs sensor_msgs

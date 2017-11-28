@@ -17,6 +17,9 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "/usr/include/gazebo-7"
+  "/usr/include/sdformat-4.3"
+  "/usr/include/ignition/math2"
   "/home/vigneshnuc/catkin_ws/src/thorvald_simulation/four_wheel_drive_gazebo_plugin/include/four_wheel_drive_gazebo_plugin"
   "/home/vigneshnuc/catkin_ws/devel/include"
   "/home/vigneshnuc/catkin_ws/src/Thorvald/base_driver/common/include"
@@ -25,9 +28,6 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/home/vigneshnuc/catkin_ws/src/Thorvald/can_devices/common/include"
   "/opt/ros/kinetic/include"
   "/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
-  "/usr/include/gazebo-7"
-  "/usr/include/sdformat-4.3"
-  "/usr/include/ignition/math2"
   "/usr/include/sdformat-4.4"
   "/usr/include/OGRE"
   "/usr/include/OGRE/Terrain"

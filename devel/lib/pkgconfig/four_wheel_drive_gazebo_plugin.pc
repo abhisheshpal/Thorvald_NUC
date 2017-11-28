@@ -4,5 +4,5 @@ Name: four_wheel_drive_gazebo_plugin
 Description: Description of four_wheel_drive_gazebo_plugin
 Version: 0.0.0
 Cflags: -I/home/vigneshnuc/catkin_ws/src/thorvald_simulation/four_wheel_drive_gazebo_plugin/include
-Libs: -L/home/vigneshnuc/catkin_ws/devel/lib -lfour_wheel_drive_gazebo_plugin
+Libs: -L/home/vigneshnuc/catkin_ws/devel/lib 
 Requires: dynamic_reconfigure gazebo_plugins gazebo_ros geometry_msgs nav_msgs roscpp std_msgs std_srvs tf base_drive_chain

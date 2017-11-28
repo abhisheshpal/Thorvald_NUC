@@ -53,10 +53,6 @@ gazebo/math/gzmath.hh
 -
 gazebo/physics/Model.hh
 -
-gazebo/transport/TransportTypes.hh
-/home/vigneshnuc/catkin_ws/src/thorvald_simulation/four_wheel_drive_gazebo_plugin/include/four_wheel_drive_gazebo_plugin/gazebo/transport/TransportTypes.hh
-gazebo/msgs/MessageTypes.hh
-/home/vigneshnuc/catkin_ws/src/thorvald_simulation/four_wheel_drive_gazebo_plugin/include/four_wheel_drive_gazebo_plugin/gazebo/msgs/MessageTypes.hh
 ros/ros.h
 -
 tf/transform_broadcaster.h
@@ -74,8 +70,6 @@ ros/advertise_options.h
 boost/thread.hpp
 -
 boost/bind.hpp
--
-boost/thread/mutex.hpp
 -
 base_drive_chain/BaseState.h
 -

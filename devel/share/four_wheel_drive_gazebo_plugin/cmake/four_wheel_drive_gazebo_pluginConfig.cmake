@@ -109,7 +109,7 @@ if(NOT "/home/vigneshnuc/catkin_ws/src/thorvald_simulation/four_wheel_drive_gaze
   endforeach()
 endif()
 
-set(libraries "four_wheel_drive_gazebo_plugin")
+set(libraries "")
 foreach(library ${libraries})
   # keep build configuration keywords, target names and absolute libraries as-is
   if("${library}" MATCHES "^(debug|optimized|general)$")
