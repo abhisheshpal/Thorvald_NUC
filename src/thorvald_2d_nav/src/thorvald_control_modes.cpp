@@ -1,3 +1,28 @@
+/****************************************************************
+ *
+ * Copyright (c) 2017
+ *
+ * Norwegian university of Life Sciences (NMBU)
+ * Robotics and Control
+ *
+ *
+ * +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ *
+ * Project name: Thorvald II
+ * ROS package name: thorvald_control_modes
+ * Description: This node handles communication between ROS and the CANopen network of the Thorvald II class of robots
+ *
+ * +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ *
+ * Author: Vignesh Raja Ponnambalam, email:vignesh.raja.ponnambalam@nmbu.no
+ *
+ * Date of creation: Dec 2017
+ * ToDo: - Clean up
+ *       - Look at wait for stop if statement
+ *
+ *
+ ****************************************************************/
+
 #include <ros/ros.h>
 #include <sensor_msgs/LaserScan.h>
 #include <geometry_msgs/Point.h>
@@ -16,14 +41,21 @@
 
 geometry_msgs::Pose thorvald_estimated_pose;
 geometry_msgs::Point line[2];
-double linear_velocity,angular_velocity;
+double linear_velocity, angular_velocity;
 int Total_Points = 20;
 geometry_msgs::Pose Points[20];
+
+// possible control drive modes
+enum ControlDriveModes
+{
+DRIVE_MODE_1, DRIVE_MODE_2, DRIVE_MODE_3,
+NUMBER_OF_CONTROL_MODES
+};
 
 // Thorvald Estimated Pose data
 void robotposeCallback (const geometry_msgs::Pose::ConstPtr& pose_msg)
 {
-thorvald_estimated_pose.position = pose_msg->position;
+thorvald_estimated_pose.position = pose_msg->position;                  
 thorvald_estimated_pose.orientation = pose_msg->orientation;
 }
 
@@ -41,7 +73,7 @@ line[2].y = line_msg->points[2].y;
 
 }
 
-double control_law(double v,double omega){
+double control_law_2(double v,double omega){
 
    // split the line into segment of points
    for(int i=0;i<Total_Points;i++){
@@ -74,8 +106,25 @@ int main(int argc, char** argv)
   ros::Subscriber pose_sub = n.subscribe("thorvald_pose", 100, robotposeCallback);
   ros::Subscriber finalline_sub = n.subscribe("final_line", 100, finallineCallback);
 
+  // Reaching the Starting Point
+  if(DRIVE_MODE_1 == true){
+   DRIVE_MODE_2 == false;
+   DRIVE_MODE_3 == false;
+  }
+
+  // Navigation between rows
+  else if(DRIVE_MODE_2 == true){
   if(!boost::empty(line)){
-  control_law(linear_velocity,angular_velocity); 
+  control_law_2(linear_velocity, angular_velocity); 
+  }
+   DRIVE_MODE_1 == false;
+   DRIVE_MODE_3 == false;
+  }
+
+  // Transition between rows
+  else{
+   DRIVE_MODE_1 == false;
+   DRIVE_MODE_2 == false;
   }
 
   ros::spinOnce();	
