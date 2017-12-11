@@ -33,6 +33,7 @@ int count_i_1[1440], count_i_2[1440];
 visualization_msgs::Marker line_strip_1, line_strip_2, line_strip_3;
 
 thorvald_2d_nav::scan_detected_line polar_points;
+geometry_msgs::Pose thorvald_estimated_pose;
 
 // Our "data".
 struct Point {
@@ -65,6 +66,13 @@ void scanCallback (const sensor_msgs::LaserScan::ConstPtr& scan_msg)
 
 void simtimeCallback(const rosgraph_msgs::Clock::ConstPtr& sim_time){
 simulated_time = sim_time->clock;
+}
+
+// Thorvald Estimated Pose data
+void robotposeCallback (const geometry_msgs::Pose::ConstPtr& pose_msg)
+{
+thorvald_estimated_pose.position = pose_msg->position;                  
+thorvald_estimated_pose.orientation = pose_msg->orientation;
 }
 
 // RANSAC for line detection
@@ -264,6 +272,7 @@ int main(int argc, char** argv)
         // Subscribers
 	ros::Subscriber scan_sub_test = n.subscribe("scan", 100, scanCallback);
         ros::Subscriber time_sub = n.subscribe("clock", 100, simtimeCallback);
+        ros::Subscriber pose_sub = n.subscribe("thorvald_pose", 100, robotposeCallback);
 
         // Publishers
         ros::Publisher marker_pub_1 = n.advertise<visualization_msgs::Marker>("line_marker_1", 10);
@@ -285,6 +294,17 @@ int main(int argc, char** argv)
           }
 
         finale = 1;
+          
+        // Sub-goals check
+        if(final_Index_1[1].real_x > final_Index_1[2].real_x){
+         if((final_Index_1[1].real_x -thorvald_estimated_pose.position.x < 0.05) && (final_Index_1[1].real_y -thorvald_estimated_pose.position.y < 0.05)){
+                  finale = 0;
+         }}         
+        else{
+         if((final_Index_1[2].real_x -thorvald_estimated_pose.position.x < 0.05) && (final_Index_1[2].real_y -thorvald_estimated_pose.position.y < 0.05)){
+                  finale = 0;
+         }}
+
         }
 
 if (simulated_time.toSec()!=0){ /// SIMULATON
