@@ -310,7 +310,7 @@ int main(int argc, char** argv)
 if (simulated_time.toSec()!=0){ /// SIMULATON
 
         if ( (final_count_1 != 0) && (line_strip_1.points.size() < 2) && (!boost::empty(final_Index_1))){ 
-        line_strip_1.header.frame_id = "/map";
+        line_strip_1.header.frame_id = "/laser";
         line_strip_1.header.stamp = simulated_time;
         line_strip_1.action = visualization_msgs::Marker::ADD;
         line_strip_1.pose.orientation.w = 1.0;
@@ -339,7 +339,7 @@ if (simulated_time.toSec()!=0){ /// SIMULATON
         } // count check
 
         if ((final_count_4 != 0) && (line_strip_2.points.size() < 2) && (!boost::empty(final_Index_2))){ 
-        line_strip_2.header.frame_id = "/map";
+        line_strip_2.header.frame_id = "/laser";
         line_strip_2.header.stamp = simulated_time;
         line_strip_2.action = visualization_msgs::Marker::ADD;
         line_strip_2.pose.orientation.w = 1.0;
@@ -367,7 +367,7 @@ if (simulated_time.toSec()!=0){ /// SIMULATON
         } // count check
 
         if(((final_count_1 != 0)) && ((final_count_4 != 0)) && (line_strip_3.points.size() < 2)){
-        line_strip_3.header.frame_id = "/map";
+        line_strip_3.header.frame_id = "/laser";
         line_strip_3.header.stamp = simulated_time;
         line_strip_3.action = visualization_msgs::Marker::ADD;
         line_strip_3.pose.orientation.w = 1.0;
@@ -379,16 +379,17 @@ if (simulated_time.toSec()!=0){ /// SIMULATON
         line_strip_3.scale.x = 0.03;
 
         // Line strip is blue
-        line_strip_3.color.b = 1.0;
+        line_strip_3.color.r = 1.0;
         line_strip_3.color.a = 1.0;
 
         // Create the vertices for the points and lines
          for(int q_3 = 1; q_3 <= 2; q_3++){
         geometry_msgs::Point pt_3;
         pt_3.x = (final_Index_1[q_3].real_x + final_Index_2[q_3].real_x)/2; 
-        pt_3.y = (final_Index_1[q_3].real_y + final_Index_2[q_3].real_y)/2; 
+        //pt_3.y = (final_Index_1[q_3].real_y + final_Index_2[q_3].real_y)/2; 
+        pt_3.y = 0; 
 
-         if(pt_3.x != 0 && pt_3.y != 0){
+         if(pt_3.x != 0){
          line_strip_3.points.push_back(pt_3); 
           }  
          } // for loop end for storing points          

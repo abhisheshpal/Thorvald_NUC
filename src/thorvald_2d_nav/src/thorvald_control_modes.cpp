@@ -43,6 +43,7 @@ geometry_msgs::Pose thorvald_estimated_pose;
 geometry_msgs::Point line[2];
 double linear_velocity, angular_velocity;
 int Total_Points = 20;
+double total_length = 49.3;
 geometry_msgs::Pose Points[20];
 
 // possible control drive modes
@@ -75,6 +76,8 @@ line[2].y = line_msg->points[2].y;
 
 double control_law_2(double v,double omega){
 
+double q_x, q_y, position_error, angular_error;
+
    // split the line into segment of points
    for(int i=0;i<Total_Points;i++){
         Points[i].position.x = line[1].x * (1 - (i/Total_Points)) + line[2].x * (i / Total_Points);
@@ -84,15 +87,33 @@ double control_law_2(double v,double omega){
   v = 0.1; // angluar velocity
   double K_d = 0.5;
   double K_p = 0.1;
+  int pt = 0;
 
   // calculation of error
-  double q_x =  pow((Points[0].position.x-thorvald_estimated_pose.position.x),2);
-  double q_y =  pow((Points[0].position.y-thorvald_estimated_pose.position.y),2);
-  double position_error = sqrt(q_x + q_y);
-  double angular_error = (Points[0].position.y/Points[0].position.x) - tf::getYaw(thorvald_estimated_pose.orientation);
+  if(pt==0){
+  q_x =  pow((Points[pt].position.x-thorvald_estimated_pose.position.x),2);
+  q_y =  pow((Points[pt].position.y-thorvald_estimated_pose.position.y),2);
+  position_error = sqrt(q_x + q_y);
+  angular_error = (Points[pt].position.y/Points[pt].position.x) - tf::getYaw(thorvald_estimated_pose.orientation);
 
   // control law
   omega = v * pow(cos(angular_error),3) * (-(K_d*tan(angular_error)) - (K_p*position_error));
+  }
+
+  if(((position_error<=0.1) && (angular_error<=0.1))){
+  q_x =  pow((Points[pt].position.x-thorvald_estimated_pose.position.x),2);
+  q_y =  pow((Points[pt].position.y-thorvald_estimated_pose.position.y),2);
+  position_error = sqrt(q_x + q_y);
+  angular_error = (Points[pt].position.y/Points[pt].position.x) - tf::getYaw(thorvald_estimated_pose.orientation);
+
+  // control law
+  omega = v * pow(cos(angular_error),3) * (-(K_d*tan(angular_error)) - (K_p*position_error));
+  pt = pt + 1;
+  }
+
+}
+
+double control_law_3(double v,double omega){
 
 }
 
@@ -123,6 +144,9 @@ int main(int argc, char** argv)
 
   // Transition between rows
   else{
+  if(thorvald_estimated_pose.position.x - total_length < 0.1){
+  control_law_3(linear_velocity, angular_velocity); 
+  }
    DRIVE_MODE_1 == false;
    DRIVE_MODE_2 == false;
   }

@@ -15,7 +15,7 @@
 
 <node pkg="rosbag" type="play" name="player" output="screen" args="--clock /home/vigneshnuc/catkin_ws/2017-11-12-11-19-37_with_6.bag"/>
 
-<!--node pkg="thorvald_2d_nav" type="lab_rat" name="lab_rat" /-->
+<node pkg="thorvald_2d_nav" type="lab_rat" name="lab_rat" />
 
 <!--node pkg="thorvald_2d_nav" type="odometry_generation" name="odometry_generation" /-->
 
