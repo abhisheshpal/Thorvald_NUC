@@ -6,6 +6,8 @@
                :std_msgs-msg
 )
   :components ((:file "_package")
+    (:file "control_commands" :depends-on ("_package_control_commands"))
+    (:file "_package_control_commands" :depends-on ("_package"))
     (:file "landmarks" :depends-on ("_package_landmarks"))
     (:file "_package_landmarks" :depends-on ("_package"))
     (:file "scan_detected_line" :depends-on ("_package_scan_detected_line"))

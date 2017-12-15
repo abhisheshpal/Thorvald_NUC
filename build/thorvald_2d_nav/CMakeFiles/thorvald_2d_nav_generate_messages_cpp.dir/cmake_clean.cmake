@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/thorvald_2d_nav_generate_messages_cpp"
   "/home/vigneshnuc/catkin_ws/devel/include/thorvald_2d_nav/landmarks.h"
+  "/home/vigneshnuc/catkin_ws/devel/include/thorvald_2d_nav/control_commands.h"
   "/home/vigneshnuc/catkin_ws/devel/include/thorvald_2d_nav/scan_detected_line.h"
 )
 

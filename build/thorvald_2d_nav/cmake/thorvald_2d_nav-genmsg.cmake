@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.cmake.em
 
-message(STATUS "thorvald_2d_nav: 2 messages, 0 services")
+message(STATUS "thorvald_2d_nav: 3 messages, 0 services")
 
 set(MSG_I_FLAGS "-Ithorvald_2d_nav:/home/vigneshnuc/catkin_ws/src/thorvald_2d_nav/msg;-Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg;-Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg")
 
@@ -22,6 +22,11 @@ add_custom_target(_thorvald_2d_nav_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "thorvald_2d_nav" "/home/vigneshnuc/catkin_ws/src/thorvald_2d_nav/msg/landmarks.msg" "std_msgs/Header:geometry_msgs/Point"
 )
 
+get_filename_component(_filename "/home/vigneshnuc/catkin_ws/src/thorvald_2d_nav/msg/control_commands.msg" NAME_WE)
+add_custom_target(_thorvald_2d_nav_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "thorvald_2d_nav" "/home/vigneshnuc/catkin_ws/src/thorvald_2d_nav/msg/control_commands.msg" "std_msgs/Header"
+)
+
 get_filename_component(_filename "/home/vigneshnuc/catkin_ws/src/thorvald_2d_nav/msg/scan_detected_line.msg" NAME_WE)
 add_custom_target(_thorvald_2d_nav_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "thorvald_2d_nav" "/home/vigneshnuc/catkin_ws/src/thorvald_2d_nav/msg/scan_detected_line.msg" "std_msgs/Header"
@@ -37,6 +42,12 @@ _generate_msg_cpp(thorvald_2d_nav
   "/home/vigneshnuc/catkin_ws/src/thorvald_2d_nav/msg/landmarks.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/thorvald_2d_nav
+)
+_generate_msg_cpp(thorvald_2d_nav
+  "/home/vigneshnuc/catkin_ws/src/thorvald_2d_nav/msg/control_commands.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/thorvald_2d_nav
 )
 _generate_msg_cpp(thorvald_2d_nav
@@ -62,6 +73,8 @@ add_dependencies(thorvald_2d_nav_generate_messages thorvald_2d_nav_generate_mess
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/vigneshnuc/catkin_ws/src/thorvald_2d_nav/msg/landmarks.msg" NAME_WE)
 add_dependencies(thorvald_2d_nav_generate_messages_cpp _thorvald_2d_nav_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/vigneshnuc/catkin_ws/src/thorvald_2d_nav/msg/control_commands.msg" NAME_WE)
+add_dependencies(thorvald_2d_nav_generate_messages_cpp _thorvald_2d_nav_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/vigneshnuc/catkin_ws/src/thorvald_2d_nav/msg/scan_detected_line.msg" NAME_WE)
 add_dependencies(thorvald_2d_nav_generate_messages_cpp _thorvald_2d_nav_generate_messages_check_deps_${_filename})
 
@@ -78,6 +91,12 @@ _generate_msg_eus(thorvald_2d_nav
   "/home/vigneshnuc/catkin_ws/src/thorvald_2d_nav/msg/landmarks.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/thorvald_2d_nav
+)
+_generate_msg_eus(thorvald_2d_nav
+  "/home/vigneshnuc/catkin_ws/src/thorvald_2d_nav/msg/control_commands.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/thorvald_2d_nav
 )
 _generate_msg_eus(thorvald_2d_nav
@@ -103,6 +122,8 @@ add_dependencies(thorvald_2d_nav_generate_messages thorvald_2d_nav_generate_mess
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/vigneshnuc/catkin_ws/src/thorvald_2d_nav/msg/landmarks.msg" NAME_WE)
 add_dependencies(thorvald_2d_nav_generate_messages_eus _thorvald_2d_nav_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/vigneshnuc/catkin_ws/src/thorvald_2d_nav/msg/control_commands.msg" NAME_WE)
+add_dependencies(thorvald_2d_nav_generate_messages_eus _thorvald_2d_nav_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/vigneshnuc/catkin_ws/src/thorvald_2d_nav/msg/scan_detected_line.msg" NAME_WE)
 add_dependencies(thorvald_2d_nav_generate_messages_eus _thorvald_2d_nav_generate_messages_check_deps_${_filename})
 
@@ -119,6 +140,12 @@ _generate_msg_lisp(thorvald_2d_nav
   "/home/vigneshnuc/catkin_ws/src/thorvald_2d_nav/msg/landmarks.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/thorvald_2d_nav
+)
+_generate_msg_lisp(thorvald_2d_nav
+  "/home/vigneshnuc/catkin_ws/src/thorvald_2d_nav/msg/control_commands.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/thorvald_2d_nav
 )
 _generate_msg_lisp(thorvald_2d_nav
@@ -144,6 +171,8 @@ add_dependencies(thorvald_2d_nav_generate_messages thorvald_2d_nav_generate_mess
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/vigneshnuc/catkin_ws/src/thorvald_2d_nav/msg/landmarks.msg" NAME_WE)
 add_dependencies(thorvald_2d_nav_generate_messages_lisp _thorvald_2d_nav_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/vigneshnuc/catkin_ws/src/thorvald_2d_nav/msg/control_commands.msg" NAME_WE)
+add_dependencies(thorvald_2d_nav_generate_messages_lisp _thorvald_2d_nav_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/vigneshnuc/catkin_ws/src/thorvald_2d_nav/msg/scan_detected_line.msg" NAME_WE)
 add_dependencies(thorvald_2d_nav_generate_messages_lisp _thorvald_2d_nav_generate_messages_check_deps_${_filename})
 
@@ -160,6 +189,12 @@ _generate_msg_nodejs(thorvald_2d_nav
   "/home/vigneshnuc/catkin_ws/src/thorvald_2d_nav/msg/landmarks.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/thorvald_2d_nav
+)
+_generate_msg_nodejs(thorvald_2d_nav
+  "/home/vigneshnuc/catkin_ws/src/thorvald_2d_nav/msg/control_commands.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/thorvald_2d_nav
 )
 _generate_msg_nodejs(thorvald_2d_nav
@@ -185,6 +220,8 @@ add_dependencies(thorvald_2d_nav_generate_messages thorvald_2d_nav_generate_mess
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/vigneshnuc/catkin_ws/src/thorvald_2d_nav/msg/landmarks.msg" NAME_WE)
 add_dependencies(thorvald_2d_nav_generate_messages_nodejs _thorvald_2d_nav_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/vigneshnuc/catkin_ws/src/thorvald_2d_nav/msg/control_commands.msg" NAME_WE)
+add_dependencies(thorvald_2d_nav_generate_messages_nodejs _thorvald_2d_nav_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/vigneshnuc/catkin_ws/src/thorvald_2d_nav/msg/scan_detected_line.msg" NAME_WE)
 add_dependencies(thorvald_2d_nav_generate_messages_nodejs _thorvald_2d_nav_generate_messages_check_deps_${_filename})
 
@@ -201,6 +238,12 @@ _generate_msg_py(thorvald_2d_nav
   "/home/vigneshnuc/catkin_ws/src/thorvald_2d_nav/msg/landmarks.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/geometry_msgs/cmake/../msg/Point.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/thorvald_2d_nav
+)
+_generate_msg_py(thorvald_2d_nav
+  "/home/vigneshnuc/catkin_ws/src/thorvald_2d_nav/msg/control_commands.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/thorvald_2d_nav
 )
 _generate_msg_py(thorvald_2d_nav
@@ -225,6 +268,8 @@ add_dependencies(thorvald_2d_nav_generate_messages thorvald_2d_nav_generate_mess
 
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/vigneshnuc/catkin_ws/src/thorvald_2d_nav/msg/landmarks.msg" NAME_WE)
+add_dependencies(thorvald_2d_nav_generate_messages_py _thorvald_2d_nav_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/vigneshnuc/catkin_ws/src/thorvald_2d_nav/msg/control_commands.msg" NAME_WE)
 add_dependencies(thorvald_2d_nav_generate_messages_py _thorvald_2d_nav_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/vigneshnuc/catkin_ws/src/thorvald_2d_nav/msg/scan_detected_line.msg" NAME_WE)
 add_dependencies(thorvald_2d_nav_generate_messages_py _thorvald_2d_nav_generate_messages_check_deps_${_filename})

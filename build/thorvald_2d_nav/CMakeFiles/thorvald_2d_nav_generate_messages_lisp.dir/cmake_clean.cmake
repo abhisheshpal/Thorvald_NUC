@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/thorvald_2d_nav_generate_messages_lisp"
   "/home/vigneshnuc/catkin_ws/devel/share/common-lisp/ros/thorvald_2d_nav/msg/landmarks.lisp"
+  "/home/vigneshnuc/catkin_ws/devel/share/common-lisp/ros/thorvald_2d_nav/msg/control_commands.lisp"
   "/home/vigneshnuc/catkin_ws/devel/share/common-lisp/ros/thorvald_2d_nav/msg/scan_detected_line.lisp"
 )
 

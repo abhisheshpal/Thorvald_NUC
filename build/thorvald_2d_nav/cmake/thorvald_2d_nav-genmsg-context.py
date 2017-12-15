@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.context.in
 
-messages_str = "/home/vigneshnuc/catkin_ws/src/thorvald_2d_nav/msg/scan_detected_line.msg;/home/vigneshnuc/catkin_ws/src/thorvald_2d_nav/msg/landmarks.msg"
+messages_str = "/home/vigneshnuc/catkin_ws/src/thorvald_2d_nav/msg/scan_detected_line.msg;/home/vigneshnuc/catkin_ws/src/thorvald_2d_nav/msg/landmarks.msg;/home/vigneshnuc/catkin_ws/src/thorvald_2d_nav/msg/control_commands.msg"
 services_str = ""
 pkg_name = "thorvald_2d_nav"
 dependencies_str = "std_msgs;geometry_msgs"

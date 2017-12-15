@@ -58,6 +58,7 @@ add_message_files(
    FILES
    scan_detected_line.msg
    landmarks.msg
+   control_commands.msg
  )
 
 ## Generate services in the 'srv' folder

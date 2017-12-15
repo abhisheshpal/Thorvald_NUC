@@ -54,6 +54,7 @@ CMAKE_BINARY_DIR = /home/vigneshnuc/catkin_ws/build
 include thorvald_2d_nav/CMakeFiles/thorvald_2d_nav_generate_messages_py.dir/progress.make
 
 thorvald_2d_nav/CMakeFiles/thorvald_2d_nav_generate_messages_py: /home/vigneshnuc/catkin_ws/devel/lib/python2.7/dist-packages/thorvald_2d_nav/msg/_landmarks.py
+thorvald_2d_nav/CMakeFiles/thorvald_2d_nav_generate_messages_py: /home/vigneshnuc/catkin_ws/devel/lib/python2.7/dist-packages/thorvald_2d_nav/msg/_control_commands.py
 thorvald_2d_nav/CMakeFiles/thorvald_2d_nav_generate_messages_py: /home/vigneshnuc/catkin_ws/devel/lib/python2.7/dist-packages/thorvald_2d_nav/msg/_scan_detected_line.py
 thorvald_2d_nav/CMakeFiles/thorvald_2d_nav_generate_messages_py: /home/vigneshnuc/catkin_ws/devel/lib/python2.7/dist-packages/thorvald_2d_nav/msg/__init__.py
 
@@ -65,20 +66,28 @@ thorvald_2d_nav/CMakeFiles/thorvald_2d_nav_generate_messages_py: /home/vigneshnu
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vigneshnuc/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python from MSG thorvald_2d_nav/landmarks"
 	cd /home/vigneshnuc/catkin_ws/build/thorvald_2d_nav && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/vigneshnuc/catkin_ws/src/thorvald_2d_nav/msg/landmarks.msg -Ithorvald_2d_nav:/home/vigneshnuc/catkin_ws/src/thorvald_2d_nav/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p thorvald_2d_nav -o /home/vigneshnuc/catkin_ws/devel/lib/python2.7/dist-packages/thorvald_2d_nav/msg
 
+/home/vigneshnuc/catkin_ws/devel/lib/python2.7/dist-packages/thorvald_2d_nav/msg/_control_commands.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
+/home/vigneshnuc/catkin_ws/devel/lib/python2.7/dist-packages/thorvald_2d_nav/msg/_control_commands.py: /home/vigneshnuc/catkin_ws/src/thorvald_2d_nav/msg/control_commands.msg
+/home/vigneshnuc/catkin_ws/devel/lib/python2.7/dist-packages/thorvald_2d_nav/msg/_control_commands.py: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vigneshnuc/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python from MSG thorvald_2d_nav/control_commands"
+	cd /home/vigneshnuc/catkin_ws/build/thorvald_2d_nav && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/vigneshnuc/catkin_ws/src/thorvald_2d_nav/msg/control_commands.msg -Ithorvald_2d_nav:/home/vigneshnuc/catkin_ws/src/thorvald_2d_nav/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p thorvald_2d_nav -o /home/vigneshnuc/catkin_ws/devel/lib/python2.7/dist-packages/thorvald_2d_nav/msg
+
 /home/vigneshnuc/catkin_ws/devel/lib/python2.7/dist-packages/thorvald_2d_nav/msg/_scan_detected_line.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
 /home/vigneshnuc/catkin_ws/devel/lib/python2.7/dist-packages/thorvald_2d_nav/msg/_scan_detected_line.py: /home/vigneshnuc/catkin_ws/src/thorvald_2d_nav/msg/scan_detected_line.msg
 /home/vigneshnuc/catkin_ws/devel/lib/python2.7/dist-packages/thorvald_2d_nav/msg/_scan_detected_line.py: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vigneshnuc/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python from MSG thorvald_2d_nav/scan_detected_line"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vigneshnuc/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python from MSG thorvald_2d_nav/scan_detected_line"
 	cd /home/vigneshnuc/catkin_ws/build/thorvald_2d_nav && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/vigneshnuc/catkin_ws/src/thorvald_2d_nav/msg/scan_detected_line.msg -Ithorvald_2d_nav:/home/vigneshnuc/catkin_ws/src/thorvald_2d_nav/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -p thorvald_2d_nav -o /home/vigneshnuc/catkin_ws/devel/lib/python2.7/dist-packages/thorvald_2d_nav/msg
 
 /home/vigneshnuc/catkin_ws/devel/lib/python2.7/dist-packages/thorvald_2d_nav/msg/__init__.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
 /home/vigneshnuc/catkin_ws/devel/lib/python2.7/dist-packages/thorvald_2d_nav/msg/__init__.py: /home/vigneshnuc/catkin_ws/devel/lib/python2.7/dist-packages/thorvald_2d_nav/msg/_landmarks.py
+/home/vigneshnuc/catkin_ws/devel/lib/python2.7/dist-packages/thorvald_2d_nav/msg/__init__.py: /home/vigneshnuc/catkin_ws/devel/lib/python2.7/dist-packages/thorvald_2d_nav/msg/_control_commands.py
 /home/vigneshnuc/catkin_ws/devel/lib/python2.7/dist-packages/thorvald_2d_nav/msg/__init__.py: /home/vigneshnuc/catkin_ws/devel/lib/python2.7/dist-packages/thorvald_2d_nav/msg/_scan_detected_line.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vigneshnuc/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python msg __init__.py for thorvald_2d_nav"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/vigneshnuc/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Python msg __init__.py for thorvald_2d_nav"
 	cd /home/vigneshnuc/catkin_ws/build/thorvald_2d_nav && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/vigneshnuc/catkin_ws/devel/lib/python2.7/dist-packages/thorvald_2d_nav/msg --initpy
 
 thorvald_2d_nav_generate_messages_py: thorvald_2d_nav/CMakeFiles/thorvald_2d_nav_generate_messages_py
 thorvald_2d_nav_generate_messages_py: /home/vigneshnuc/catkin_ws/devel/lib/python2.7/dist-packages/thorvald_2d_nav/msg/_landmarks.py
+thorvald_2d_nav_generate_messages_py: /home/vigneshnuc/catkin_ws/devel/lib/python2.7/dist-packages/thorvald_2d_nav/msg/_control_commands.py
 thorvald_2d_nav_generate_messages_py: /home/vigneshnuc/catkin_ws/devel/lib/python2.7/dist-packages/thorvald_2d_nav/msg/_scan_detected_line.py
 thorvald_2d_nav_generate_messages_py: /home/vigneshnuc/catkin_ws/devel/lib/python2.7/dist-packages/thorvald_2d_nav/msg/__init__.py
 thorvald_2d_nav_generate_messages_py: thorvald_2d_nav/CMakeFiles/thorvald_2d_nav_generate_messages_py.dir/build.make

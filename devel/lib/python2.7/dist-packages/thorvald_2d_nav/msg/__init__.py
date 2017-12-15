@@ -5,5 +5,6 @@ from ._RampClimbingActionResult import *
 from ._RampClimbingFeedback import *
 from ._RampClimbingGoal import *
 from ._RampClimbingResult import *
+from ._control_commands import *
 from ._landmarks import *
 from ._scan_detected_line import *
