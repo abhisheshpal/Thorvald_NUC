@@ -310,7 +310,7 @@ int main(int argc, char** argv)
 
         } // count check
 
-if(line_strip_1.points.size() > 1 && line_strip_2.points.size() > 1){
+     if(line_strip_1.points.size() > 1 && line_strip_2.points.size() > 1){
         final_line.header.frame_id = "/laser";
         final_line.header.stamp = ros::Time::now();
         final_line.action = visualization_msgs::Marker::ADD;
