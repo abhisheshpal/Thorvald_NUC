@@ -411,8 +411,8 @@
 
 <joint name="hokuyo_joint" type="fixed">
     <axis xyz="0 1 0" />
-    <origin xyz="0.42 0 0.2" rpy="0 0 0"/>
-    <parent link="base_link"/>
+    <origin xyz="0.02 0 0.2" rpy="0 0 0"/>
+    <parent link="front_link"/>
     <child link="laser"/>
   </joint>
 

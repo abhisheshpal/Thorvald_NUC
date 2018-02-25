@@ -11,11 +11,12 @@ find_package(catkin REQUIRED COMPONENTS
   geometry_msgs
   sensor_msgs
   std_msgs
-  actionlib
+  actionlib_msgs
   tf
   visualization_msgs
   message_generation
   nav_msgs
+  std_srvs
 )
 
 find_package(Eigen3 REQUIRED)
@@ -58,27 +59,27 @@ add_message_files(
    FILES
    scan_detected_line.msg
    landmarks.msg
-   control_commands.msg
  )
 
 ## Generate services in the 'srv' folder
-# add_service_files(
-#   FILES
-#   Service1.srv
-#   Service2.srv
-# )
+ add_service_files(
+   DIRECTORY srv
+   FILES
+   GpsSwitch.srv
+   sub_goal.srv
+ )
 
 ## Generate actions in the 'action' folder
 # add_action_files(
-#   FILES
-#   Action1.action
+#  DIRECTORY action
+#  FILES gps_switch.action
 #   Action2.action
 # )
 
 ## Generate added messages and services with any dependencies listed here
  generate_messages(
    DEPENDENCIES
-   std_msgs geometry_msgs # Or other packages containing msgs
+   std_msgs geometry_msgs actionlib_msgs std_srvs# Or other packages containing msgs
  )
 
 ################################################
@@ -113,7 +114,7 @@ add_message_files(
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES thorvald_2dnav
-#  CATKIN_DEPENDS move_base roscpp rospy
+ CATKIN_DEPENDS actionlib_msgs
 #  DEPENDS system_lib
 )
 
@@ -145,14 +146,20 @@ include_directories(/usr/include/eigen3)
  add_executable(thorvald_RANSAC src/thorvald_RANSAC.cpp)
  target_link_libraries(thorvald_RANSAC ${catkin_LIBRARIES})
 
- add_executable(thorvald_line_SLAM src/thorvald_line_SLAM.cpp)
- target_link_libraries(thorvald_line_SLAM ${catkin_LIBRARIES})
+ add_executable(lab_rat src/lab_rat.cpp)
+ target_link_libraries(lab_rat ${catkin_LIBRARIES})
 
  add_executable(thorvald_control_modes src/thorvald_control_modes.cpp)
  target_link_libraries(thorvald_control_modes ${catkin_LIBRARIES})
 
- add_executable(lab_rat src/lab_rat.cpp)
- target_link_libraries(lab_rat ${catkin_LIBRARIES})
+ add_executable(thorvald_line_SLAM src/thorvald_line_SLAM.cpp)
+ target_link_libraries(thorvald_line_SLAM ${catkin_LIBRARIES})
+
+ add_executable(gps_switch_server src/gps_server.cpp)
+ target_link_libraries(gps_switch_server ${catkin_LIBRARIES})
+
+ add_executable(gps_switch_client src/gps_client.cpp)
+ target_link_libraries(gps_switch_client ${catkin_LIBRARIES})
 
 ## Declare a C++ executable
 # add_executable(thorvald_2dnav_node src/thorvald_2dnav_node.cpp)
@@ -164,6 +171,8 @@ add_dependencies(thorvald_RANSAC ${${thorvald_2d_nav}_EXPORTED_TARGETS} ${catkin
 add_dependencies(thorvald_line_SLAM ${${thorvald_2d_nav}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 add_dependencies(thorvald_control_modes ${${thorvald_2d_nav}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 add_dependencies(lab_rat ${${thorvald_2d_nav}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(gps_switch_server ${${thorvald_2d_nav}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(gps_switch_client ${${thorvald_2d_nav}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 ## Specify libraries to link a library or executable target against
 # target_link_libraries(thorvald_2dnav_node
