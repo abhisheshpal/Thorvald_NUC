@@ -144,9 +144,9 @@ MatrixXd prediction_step(MatrixXd mu_1, MatrixXd cov_1, MatrixXd line_local_1, M
 
 //--------------------JACOBIAN NEEDED TO BE CALCULATED--------------//
       cov_1(1,1) = 1;  // ***need to calculate*** //
-      cov_1(1,3) = mu_1(1,1); 
+      cov_1(1,3) = -robot_pose.twist.twist.linear.x * sin(mu(1,3));
       cov_1(2,2) = 1; 
-      cov_1(2,3) = mu_1(1,2); 
+      cov_1(2,3) = robot_pose.twist.twist.linear.x * cos(mu(1,3));
       cov_1(3,3) = 1; 
                                
       R(1,1) = R3(1,1) * motion_noise;
